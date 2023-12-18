@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+
+
+    <!-- Main Css -->
+  <link rel="stylesheet" href="/mycss/addtocard.css">
+
+  <!-- --navbar css--- -->
+  <link rel="stylesheet" href="/mycss/navbar.css">
+
+  <!-- --footer css--- -->
+  <link rel="stylesheet" href="/mycss/footer.css">
+
+    <!-------------- bootstraplink ------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-------------- font awesome ------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    
+    <!-- google font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- google font family -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container-fluit">
+        <div class="row">
+            <div class="col-md-12">
+    <nav>
+        <label for="" class="logo">Paarees</label>
+        <ul class="text-center">
+            <li><a class="action" href="/index.html"><b>Home</b></a></li>
+            <li><a href="/myhtml/aboutus.html">About</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn">Brends</a>
+                <div class="dropdown-content">
+                  <a href="/myhtml/ck.html">CK</a>
+                  <a href="/myhtml/hugoboss.html">Hugo Boss</a>
+                  <a href="/myhtml/dior.html">Dior</a>
+                  <a href="/myhtml/j.html">J.</a>
+                  <a href="/myhtml/davidoff.html">Davidoff</a>
+                  <a href="/myhtml/gucci.html">Gucci</a>
+                </div>
+              </li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn">Collections</a>
+                <div class="dropdown-content">
+                  <a href="/myhtml/Man.html">Mens</a>
+                  <a href="/myhtml/women.html">Womens</a>
+                  <a href="/myhtml/comman.html">Comman</a>
+                </div>
+              </li>
+            <li class=""><a href="/myhtml/Contect.html">Contect Us</a></li>
+            <li class="nav-item me-1 mx-5 ">
+                <a href="/myhtml/Order.html" class="mx-"><i class="fa-solid fa-truck icons"></i></a>
+            </li>
+            <li class="nav-item me-1"><a href="myhtml/addtocard.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;">
+    <sup style="height: 50px !important; width: 50px !important; font-size: 13px  !important; border-radius: 17px; color: #ffffff; background-color: rgb(17, 14, 14);" >3</sup>
+    </i></a>
+    
+            </li>
+    
+    
+            <li class="nav-item me-1">
+                <a href="/myhtml/Singin.html"> <i class="fas fa-user icons"></i></a>
+            </li>
+        </ul>
+        <label for="" id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+    </div>
+    </div>
+    </div>
+      
+    
+      <!-- -----------------navbar End--------------------------- -->
+
+
+
+    <div class="small-container  container cart-page cart-wrap">
+        <!-- <h1 class="text-center">MY CART</h1> -->
+        <section>
+            <h1 class="text-shadow mt-20"> my cart </h1>
+            <div class="tags">
+                <p class="text-shadow"><small></small></p>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12  mt-5">
+
+
+                    <div class="table-wishlist">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Unit Price</th>
+                                    <th class="stoke ps-3">Stock </th>
+                                    <!-- <th class="status ps-4">Status</th> -->
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" id="laptop1">
+                                    <td>
+                                        <div class="">
+                                            <div>
+                                                <div class="img-product">
+                                                    <img src="./bag_images/blackbumbag.jpg" alt="" class="mCS_img_loaded" id="laptop">
+                                                </div>
+                                                <div class="name-product">
+                                                    Black Bum Bag
+
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td class="price laptop">$35</td>
+                                    <td><span class="in-stock-box stoke">In Stock</span></td>
+                                    <!-- <td><button class="round-black-btn small-btn" onclick="pop()">Add to Cart</button></td> -->
+                                    </div>
+
+                                    <td class="text-center"><a href="#" class="trash-icon"><i class="fa-solid fa-trash" onclick="vanish1()"></i></a></td>
+                                </tr>
+                                <tr id="laptop2">
+                                    <td>
+                                        <div class="">
+                                            <div class="img-product">
+                                                <img src="./powerimage/uk-ueadaptor.png" alt="" class="mCS_img_loaded">
+                                            </div>
+                                            <div class="name-product">
+                                                USB Charger
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">$70</td>
+                                    <td><span class="in-stock-box stoke">In Stock</span></td>
+                                    <!-- <td><button class="round-black-btn small-btn" onclick="pop()">Add to Cart</button></td> -->
+                                    <td class="text-center"><a href="#" class="trash-icon"><i class="fa-solid fa-trash" onclick="vanish2()"></i></a></td>
+                                </tr>
+                                <tr id="laptop3">
+                                    <td>
+                                        <div class="">
+                                            <div class="img-product">
+                                                <img src="./clothesimages/triplespackingcubes.png" alt="" class="mCS_img_loaded">
+                                            </div>
+                                            <div class="name-product">
+                                                Tripple Packing Cube
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">$35</td>
+                                    <td><span class="in-stock-box stoke">In Stock</span></td>
+                                    <!-- <td><button class="round-black-btn small-btn" onclick="pop()">Add to Cart</button></td> -->
+                                    <td class="text-center"><a href="#" class="trash-icon"><i class="fa-solid fa-trash" onclick="vanish3()"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="total_price">
+                        <table>
+
+
+
+
+                            <tr>
+                                <td>Total</td>
+                                <td>$150.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- second table -->
+
+                </div>
+                <!-- column 2 -->
+                <div class="col-lg-12 border  mt-5">
+                    <div class="container p-5">
+                        <div class="mb-5">
+                            <label for="#"> <h2>Enter promo code</h2></label>
+                            <br>
+                            <input type="text" class="input" placeholder="Promo Code">
+                            <!-- <input type="button" value="submit"> -->
+                            <div class="text fw-bold button btn text-center pt-3">Submit</div>
+                        </div>
+                        <table>
+                            <tr class="pt-5">
+                                <td>Discount</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Charges</td>
+                                <td>$10.00</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>$35.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Subtotal</h5>
+
+                                </td>
+                                <td>
+                                    <h5>$190.00 </h5>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <a href="/index.html"><input type="submit" value="check out" class="btn button text-center"></a>
+                    </div>
+                </div>
+                <!-- column 2 -->
+
+            </div>
+        </div>
+    </div>
+    <!-- cart end -->
+
+    <!-- footer start -->
+    <div class="container-fluid footer mt-4">
+        <div class="row">
+            <div class="col-md-4 pt-2 text-center">
+                <i class="fa-solid fa-check-to-slot icons pb-3"></i>
+                <p class="secure write">100% SECURE CHECKOUT</p>
+            </div>
+
+            <div class="col-md-4 pt-2 text-center">
+                <i class="fa-solid fa-plane icons pb-3"></i>
+                <p class="secure write">SHIPPING TO OVER 70 COUNTRIES</p>
+            </div>
+
+            <div class="col-md-4 pt-2 text-center">
+                <i class="fa-solid fa-headphones icons pb-3"></i>
+                <p class="secure write">OUTSTANDING SUPPORT</p>
+            </div>
+        </div>
+    </div>
+   
+  <!-- ---------------------------footer----------------------- -->
+
+  <footer class="footer">
+    <div class="container-fluit container-col mx-3">
+        <div class="row">
+            <div class="col-md-3 footer-col">
+                <h4>CONTACT DETAILS<img src="" alt=""></h4>
+                <ul>
+                    
+                    <li><a href="./products.html"><i class="fa-solid fa-location-dot mx-3 f-c" style="color: #7c7c7c;"></i>156-157, Block 3, Diskomour, Orangi town, Karachi, Pakistan</a></li>
+                    <li><a href="./contact.html"><i class="fa-regular fa-clock mx-3 f-c" style="color: #7c7c7c;"></i>Customer Support: 7 Days a Week, 9:00am - 05:00pm</a></li>
+                    <li><a href="./about.html"><i class="fa-solid fa-phone mx-3 f-c" style="color: #7c7c7c;"></i>0312-1270790</a></li>
+                    
+
+
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Shipping and Returns</a></li>
+                    <li><a href="#">Terms and Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#men"> Men Perfume</a></li>
+                    <li><a href="#women">Women Perfume</a></li>
+                    <li><a href="#kids">Commun Perfume</a></li>
+                    <li><a href="#top">Brands Perfume</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>SUBSCRIBE OUR NEWSLETTER</h4>
+                <h3>Get the latest offersand promotions!</h3>
+                <form action="" novalidate class="f-m31" id="myform">
+                    
+                    <div>
+                  <input type="email" class="form-control mt-3" placeholder="Enter your Email" id="sub-a" required>
+                  <div class="invalid-feedback">
+                    Please Enter your Email
+                </div>
+              </div>
+             
+                  <!-- <a class="btn btn-success mt-3" value="submit" >Subscribe</a> -->
+                  <input type="submit" class="btn btn-succ mt-3" placeholder="Subscribe">
+                
+                 
+                  </form>
+                <div class="social-links mt-3">
+
+                    <a href="https://www.facebook.com/bag.x.official/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/bagifi.pk/?hl=en" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+<div class="row">
+  <div class="col-md-12 text-center">
+        <p class="f-ph">Copyright © 2023 <span class="f-title"> PAARESS PERFUME</span>.com. All rights reserved.</p> 
+  </div>
+</div>
+    </div>
+</footer>
+    <!-- footer ends-->
+    <script>
+        var picture = document.getElementById("laptop1")
+        var picture2 = document.getElementById("laptop2")
+        var picture3 = document.getElementById("laptop3")
+
+        function vanish1() {
+            picture.remove()
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Product removed from wishlist.',
+                showConfirmButton: false,
+                timer: 2000
+            })
+        }
+
+        function vanish2() {
+            picture2.remove()
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Product removed from wishlist.',
+                showConfirmButton: false,
+                timer: 2000
+            })
+        }
+
+        function vanish3() {
+            picture3.remove()
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Product removed from wishlist.',
+                showConfirmButton: false,
+                timer: 2000
+            })
+        }
+        var button = document.querySelectorAll("small-btn")
+
+        function pop() {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Product has been succesfully added to cart.',
+                showConfirmButton: false,
+                timer: 2000
+            })
+        }
+    </script>
+
+
+
+
+    <!-------------------------------------- bootstraplink ------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-------------------------------------- bootstraplink ------------------------------->
+</body>
+
+</html>

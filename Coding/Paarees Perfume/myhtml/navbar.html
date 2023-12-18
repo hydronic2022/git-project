@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/Screenshot 2023-11-26 021419.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!-- Google Fonts Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!-- -----swipper----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="/mycss/navbar.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluit">
+        <div class="row">
+            <div class="col-md-12">
+    <nav>
+      <div class="logo">
+        <img src="/images/logo/logo.png" alt="">
+      </div>
+        <ul class="text-center">
+            <li><a class="action" href="/index.html"><b>Home</b></a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn">Brands</a>
+                <div class="dropdown-content">
+                  <a href="/collections/FineArts/Fine Arts.html">CK</a>
+                  <a href="/collections/Antiques/Antiques.html">J.</a>
+                  <a href="/collections/Vehicles/Vehicles.html">Foog</a>
+                  <a href="/collections/FineArts/Fine Arts.html">Khadi</a>
+                  <a href="/collections/Antiques/Antiques.html">MS</a>
+                  <a href="/collections/Vehicles/Vehicles.html">Deod</a>
+                </div>
+              </li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn">Collections</a>
+                <div class="dropdown-content">
+                  <a href="/collections/FineArts/Fine Arts.html">Mens</a>
+                  <a href="/collections/Antiques/Antiques.html">Womens</a>
+                  <a href="/collections/Vehicles/Vehicles.html">Comman</a>
+                </div>
+              </li>
+            <li class=""><a href="#">Contect Us</a></li>
+            <li class="nav-item me-1 mx-5 ">
+                <a href="./track.html" class="mx-"><i class="fa-solid fa-truck icons"></i></a>
+            </li>
+            <li class="nav-item me-1"><a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;">
+    <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="height: 22px; width: 22px; font-size: 10px  !important;" >
+    <div class="mt-1">3</div> -->
+    <sup style="height: 50px !important; width: 50px !important; font-size: 13px  !important; border-radius: 17px; color: #ffffff; background-color: rgb(17, 14, 14);" >3</sup>
+    </i></a>
+
+            </li>
+
+
+            <li class="nav-item me-1">
+                <a href="/myhtml/Singin.html"> <i class="fas fa-user icons"></i></a>
+            </li>
+        </ul>
+        <label for="" id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+</div>
+</div>
+</div>
+
+<!-- ---------------------navbar End--------------- -->
+
+
+
+
+  </div>
+
+  
+
+    <!-- Bootstrap Js Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- -----swipper----- -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
+            <script>
+
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+        });
+
+    </script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+
+
+<script>
+
+  function mylogin(){
+  
+    var email=document.getElementById("myemail").value;
+    var password=document.getElementById("mypassword").value;
+  
+    if(email=="admin@gmail.com" && password=="admin123"){
+  
+      window.location.assign("/html/Order.html");
+      alert("Login Successfully");
+  
+    }
+    else{
+  
+      alert("invalid information");
+      return;
+  
+    }
+  }            
+  
+  
+  
+  
+    var forms = document.querySelectorAll('#myform')
+  
+  
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+    
+  
+  </script>
+
+
+
+</body>
+
+</html>

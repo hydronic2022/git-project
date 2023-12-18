@@ -1,0 +1,36 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.carousel{
+    margin-top: -27px !important;
+}
+.carousel-item{
+    height: 500px !important;
+    width: 100% !important;
+    
+}
+.carousel-item img{
+  height: 500px !important;
+  width: 100% !important;
+  
+}
+/* -------------------- card open-------------------------- */
+.video-one{
+  margin: 50px 0px 0px 50px !important;
+  height: 270px !important;
+  width: 500px !important;
+}
+.video-two{
+  margin: 50px 0px 0px 0px !important;
+  height: 270px !important;
+  width: 500px !important;
+}
+  /* --------------------round card close-------------------------- */
+.lounching-banner{
+  margin: auto;
+  height: 650px !important;
+  width: 350px !important;
+}
+.lounching{
+  margin: 0px 0px 0px 170px !important;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/Screenshot 2023-11-26 021419.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!-- Google Fonts Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- -----swipper----- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="/mycss/order.css">
+    
+    <!-- --navbar css--- -->
+  <link rel="stylesheet" href="/mycss/navbar.css">
+
+  <!-- --footer css--- -->
+  <link rel="stylesheet" href="/mycss/footer.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+  <!-- <div class="container-fluit">
+    <div class="row">
+        <div class="col-md-12">
+<nav>
+    <label for="" class="logo">Paarees</label>
+    <ul class="text-center">
+        <li><a class="action" href="/index.html"><b>Home</b></a></li>
+        <li><a href="/myhtml/aboutus.html">About</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Brends</a>
+            <div class="dropdown-content">
+              <a href="/myhtml/ck.html">CK</a>
+              <a href="/myhtml/hugoboss.html">Hugo Boss</a>
+              <a href="/myhtml/dior.html">Dior</a>
+              <a href="/myhtml/j.html">J.</a>
+              <a href="/myhtml/davidoff.html">Davidoff</a>
+              <a href="/myhtml/gucci.html">Gucci</a>
+            </div>
+          </li>
+        <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Collections</a>
+            <div class="dropdown-content">
+              <a href="/myhtml/Man.html">Mens</a>
+              <a href="/myhtml/women.html">Womens</a>
+              <a href="/myhtml/comman.html">Comman</a>
+            </div>
+          </li>
+        <li class=""><a href="/myhtml/Contect.html">Contect Us</a></li>
+        <li class="nav-item me-1 mx-5 ">
+            <a href="/myhtml/Order.html" class="mx-"><i class="fa-solid fa-truck icons"></i></a>
+        </li>
+        <li class="nav-item me-1"><a href="/myhtml/addtocard.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;">
+<sup style="height: 50px !important; width: 50px !important; font-size: 13px  !important; border-radius: 17px; color: #ffffff; background-color: rgb(17, 14, 14);" >3</sup>
+</i></a>
+
+        </li>
+
+
+        <li class="nav-item me-1">
+            <a href="/myhtml/Singin.html"> <i class="fas fa-user icons"></i></a>
+        </li>
+    </ul>
+    <label for="" id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav>
+</div>
+</div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="logo">
+      <img src="/images/logo/logo.png" alt="">
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/myhtml/aboutus.html">About</a>
+        </li>
+        <li class="dropdown nav-item">
+          <a href="javascript:void(0);" class="dropbtn nav-link">Brands</a>
+          <div class="dropdown-content">
+            <a href="/myhtml/ck.html">CK</a>
+            <a href="/myhtml/hugoboss.html">HugoBoss</a>
+            <a href="/myhtml/j.html">J.</a>
+            <a href="/myhtml/davidoff.html">Davidoff</a>
+            <a href="/myhtml/dior.html">Dior</a>
+            <a href="/myhtml/gucci.html">Gucci</a>
+          </div>
+        </li>
+      <li class="dropdown nav-item">
+          <a href="javascript:void(0);" class="dropbtn nav-link">Collections</a>
+          <div class="dropdown-content">
+            <a href="/myhtml/Man.html">Mens</a>
+            <a href="/myhtml/women.html">Womens</a>
+            <a href="/myhtml/comman.html">Commun</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/myhtml/Contect.html">Contact</a>
+        </li>
+        <li class="nav-item me-1 mx-5 nav-icon">
+          <a href="/myhtml/Order.html" class="nav-link"><i class="fa-solid fa-truck icons"></i></a>
+      </li>
+      <li class="nav-item me-1  nav-icon"><a href="/myhtml/addtocard.html" class="nav-link"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;">
+      <sup style="height: 50px !important; width: 50px !important; font-size: 13px  !important; border-radius: 17px; color: #ffffff; background-color: rgb(17, 14, 14); margin: 30px 0px 0px 0px !important;">3</sup>
+       </i></a>
+      </li>
+      <li class="nav-item me-1 nav-icon">
+          <a href="/myhtml/Singin.html" class="nav-link"> <i class="fas fa-user icons"></i></a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ---------------------navbar End--------------- -->
+
+<!-- ---------------------------Order form start----------------------- -->
+
+<div class="container my-5 order-div">
+    
+        <form action="" class="" id="myform" novalidate >
+            
+            <div class="row form-group">
+               
+          <div class="col-md-6 mt-5">
+            <p class="h2 mb-3">Billing Address</p>
+
+            <div class="col-md-12 form-group">
+                <label for="" class="form-lable mb-1">Name</label>
+                <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Name
+                  </div>
+              </div>
+    
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">Email</label>
+                <input type="text" class="form-control" placeholder="Enter Your Email" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Email
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">Address</label>
+                <input type="text" class="form-control" placeholder="Enter Your Address" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Address
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">City</label>
+                <input type="text" class="form-control" placeholder="Enter Your City" required> 
+                <div class="invalid-feedback">
+                    Please Enter Your City
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">State</label>
+                <input type="text" class="form-control" placeholder="Enter Your State" required>
+                <div class="invalid-feedback">
+                    Please Enter Your State
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">Zip Code</label>
+                <input type="text" class="form-control" placeholder="Enter Your Zip Code" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Zip Code
+                  </div>
+              </div>
+              
+          </div>
+
+          <div class="col-md-6 mt-5">
+            <p class="h2">PayMent Method</p>
+            <p>Accepted card</p>
+            <img src="/images/UNION.png" class="img-fluid mb-4" alt="">
+
+            <div class="col-md-12 form-group">
+                <label for="" class="form-lable">Name on Card</label>
+                <input type="text" class="form-control" placeholder="Enter Your Name on Card" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Name on Card
+                  </div>
+              </div>
+    
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">Credit Card Number</label>
+                <input type="text" class="form-control" placeholder="Enter Your Credit Card Number" required> 
+                <div class="invalid-feedback">
+                    Please Enter Your Credit Card Number
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+            <label for="" class="form-lable mb-1">Exp Month</label>
+                <input type="text" class="form-control" placeholder="Enter Your Exp Month" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Exp Month
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">Exp Year</label>
+                <input type="text" class="form-control" placeholder="Enter Your Exp Year" required>
+                <div class="invalid-feedback">
+                    Please Enter Your Exp Year
+                  </div>
+              </div>
+
+              <div class="col-md-12 mt-4 form-group">
+                <label for="" class="form-lable mb-1">CVV</label>
+                <input type="text" class="form-control" placeholder="Enter Your CVV" required>
+                <div class="invalid-feedback">
+                    Please Enter Your CVV
+                  </div>
+              </div>
+
+          
+          </div>
+        </div>
+
+        <!-- <a href="" class="btn btn-success d-grid mt-5">Submit</a> -->
+        <input type="submit" class="btn btn-success mt-5 d-grid" placeholder="Submit">
+
+        </form>
+    
+</div>
+
+
+<!-- ---------------------------Order form End----------------------- -->
+
+
+   <!-- ---------------------------footer----------------------- -->
+
+   <footer class="footer">
+    <div class="container-fluit container-col mx-3">
+        <div class="row">
+            <div class="col-md-3 footer-col">
+                <h4>CONTACT DETAILS<img src="" alt=""></h4>
+                <ul>
+                    
+                    <li><a href="./products.html"><i class="fa-solid fa-location-dot mx-3 f-c" style="color: #7c7c7c;"></i>156-157, Block 3, Diskomour, Orangi town, Karachi, Pakistan</a></li>
+                    <li><a href="./contact.html"><i class="fa-regular fa-clock mx-3 f-c" style="color: #7c7c7c;"></i>Customer Support: 7 Days a Week, 9:00am - 05:00pm</a></li>
+                    <li><a href="./about.html"><i class="fa-solid fa-phone mx-3 f-c" style="color: #7c7c7c;"></i>0312-1270790</a></li>
+                    
+
+
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Shipping and Returns</a></li>
+                    <li><a href="#">Terms and Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>Categories</h4>
+                <ul>
+                  <li><a href="/myhtml/Man.html"> Men Perfume</a></li>
+                  <li><a href="/myhtml/women.html">Women Perfume</a></li>
+                  <li><a href="/myhtml/comman.html">Commun Perfume</a></li>
+                  
+              </ul>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h4>SUBSCRIBE OUR NEWSLETTER</h4>
+                <h3>Get the latest offersand promotions!</h3>
+                <form action="" novalidate class="f-m31" id="myform">
+                    
+                    <div>
+                  <input type="email" class="form-control mt-3" placeholder="Enter your Email" id="sub-a" required>
+                  <div class="invalid-feedback">
+                    Please Enter your Email
+                </div>
+              </div>
+             
+                  <!-- <a class="btn btn-success mt-3" value="submit" >Subscribe</a> -->
+                  <input type="submit" class="btn btn-succ mt-3" placeholder="Subscribe">
+                
+                 
+                  </form>
+                <div class="social-links mt-3">
+
+                    <a href="https://www.facebook.com/bag.x.official/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/bagifi.pk/?hl=en" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+<div class="row">
+  <div class="col-md-12 text-center">
+        <p class="f-ph">Copyright © 2023 <span class="f-title"> PAARESS PERFUME</span>.com. All rights reserved.</p> 
+  </div>
+</div>
+    </div>
+</footer>
+
+  
+
+    <!-- Bootstrap Js Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- -----swipper----- -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
+            <script>
+
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+        });
+
+    </script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+
+
+<script>
+
+  function mylogin(){
+  
+    var email=document.getElementById("myemail").value;
+    var password=document.getElementById("mypassword").value;
+  
+    if(email=="admin@gmail.com" && password=="admin123"){
+  
+      window.location.assign("/html/Order.html");
+      alert("Login Successfully");
+  
+    }
+    else{
+  
+      alert("invalid information");
+      return;
+  
+    }
+  }            
+  
+  
+  
+  
+    var forms = document.querySelectorAll('#myform')
+  
+  
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+    
+  
+  </script>
+
+
+
+</body>
+
+</html>
